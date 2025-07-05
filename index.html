@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./cdns/fm.selectator.jquery.css">
+    <link rel="shortcut icon" href="./fav.png" type="image/x-icon">
+    <title>ROBOT</title>
+</head>
+
+<body>
+    <div class="main__platform-video__intro">
+        <div class="main__platform-video">
+            <video class="main__platform-video__media" src="https://qxbroker.com/site/img/main_bg.mp4" autoplay muted
+                loop></video>
+        </div>
+    </div>
+    <div id="doc__wrapper">
+        <div id="title">YQT BOT PRO</div>
+        <div id="content__wrapper">
+            <div id="banner">
+                <img src="./yqt.jpg" alt="" width="100">
+            </div>
+            <div class="platform__wrapper">
+                <select id="platform__box" class="platform__select">
+                    <option value="q" data-left="./imgs/qx.png">QUOTEX</option>
+                    <option value="p" data-left="./imgs/po.png">POCKET OPTION</option>
+                    <option value="b" data-left="./imgs/binomo.png">BINOMO</option>
+                    <option value="o" data-left="./imgs/olymp.png">OLYMP</option>
+                    <option value="i" data-left="./imgs/iq.png">IQ OPTION</option>
+                    <option value="e" data-left="./imgs/ep.jpg">EXPERT OPTION</option>
+                </select>
+            </div>
+            <div class="pair__wrapper">
+                <select id="pair__box" class="pair__select">
+                </select><br><br>
+                <select id="time__box" class="time__select">
+                    <option value="a" data-left="./imgs/expire.png">5s</option>
+                    <option value="b" data-left="./imgs/expire.png">10s</option>
+                    <option value="c" data-left="./imgs/expire.png">15s</option>
+                    <option value="d" data-left="./imgs/expire.png">30s</option>
+                    <option selected value="e" data-left="./imgs/expire.png">1m</option>
+                    <option value="f" data-left="./imgs/expire.png">2m</option>
+                    <option value="g" data-left="./imgs/expire.png">5m</option>
+                </select>
+            </div>
+            <div id="trade__wrapper">
+                <button id="signal">GET SIGNAL</button>
+                <div class="rem__time"></div>
+            </div>
+            <div id="center">
+                <div id="loader"></div>
+                <button id="result"></button>
+            </div>
+        </div>
+    </div>
+    <script src="./cdns/jquery-3.4.1.min.js"></script>
+    <script src="./cdns/fm.selectator.jquery.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
